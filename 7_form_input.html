@@ -1,0 +1,104 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="IE=7">
+     <title>表单</title>
+ </head>
+ <body>
+     <!-- action定义把form表单里的内容提交到哪个后台数据 -->
+     <form action="process.php">
+         <!-- 文本 -->
+         <div>
+            <!-- label for是与当前input相关联，点击姓名，id为name的input会高亮-->
+            <label for="name">姓名</label>
+            <!-- 后端根据name属性获取值 -->
+            <!-- value是输入框里面的值 -->
+            <input type="text" id="name" name="name" value="gabrina">
+         </div>
+       
+        <!-- 邮箱 -->
+         <div>
+            <label for="email">邮箱</label>
+            <!-- placeholder是提示字符，输入时自动清除，无数值时自动站位显示 -->
+            <input type="email" name="email" id="email" placeholder="请输入邮箱">  
+        </div>
+        
+        <!-- date -->
+        <div>
+            <label for="birthday">生日</label>
+            <input 
+            type="date"
+            name="birthday" 
+            id="birthday" 
+            placeholder="请输入生日" >
+        </div>
+
+        <!-- password -->
+        <div>
+            <label for="password">密码</label>
+            <input 
+            type="password" 
+            name="password" 
+            id="password" 
+            placeholder="请输入password" >
+        </div>
+
+        <!-- textarea-->
+        <div>
+            <label for="message">信息</label>
+            <textarea type="message" name="message" cols="60" rows="20"></textarea> 
+        </div>
+
+        <!-- number -->
+        <div>
+            <label for="age">年龄</label>
+            <input type="number" name="age" id="age" placeholder="请输入年龄" >
+        </div>
+
+
+
+        <!-- select选项 -->
+        <div>
+            <label for="sex">性别</label>
+            <select name="sex" id="sex">
+                <!-- 后端根据选项获得value的值 -->
+                <option value="male">男</option>
+                <option value="female">女</option>
+                <option value="other">其他</option>
+            </select> 
+        </div>
+
+        <!-- radio -->
+        <div>
+            <label for="membership">成员</label>
+            <input type="radio" name="membership" id="membership" value="vue">vue
+            <input type="radio" name="membership" id="membership" value="react">react
+            <input type="radio" name="membership" id="membership" value="node">node
+        </div>
+
+         <!-- checkbox -->
+         <div>
+            <label for="membership">成员</label>
+            <input type="checkbox" name="membership" id="membership" value="vue">vue
+            <input type="checkbox" name="membership" id="membership" value="react">react
+            <input type="checkbox" name="membership" id="membership" value="node">node
+        </div>
+
+        <!-- button -->
+        <!-- button不会把数据提交到后台 -->
+        <input type="button" value="注册">
+
+        <!-- submit -->
+        <!-- 会将表单数据传递到后端action里设置的文件里 -->
+        <input type="submit" value="注册">
+
+        <!-- reset -->
+        <!-- 重置表单的内容 -->
+        <button type="reset">重置</button>
+     
+     </form>
+
+    </body>
+ </html>                                                                                                               

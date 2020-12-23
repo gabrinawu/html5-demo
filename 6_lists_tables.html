@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <title>列表和表单标签</title>
+</head>
+<body>
+    <!-- list:
+          无序列表 ul(unorder list)
+          有序列表 ol(order list)
+
+    -->
+    <!--  ul是整个列表的容器 -->
+    <!-- style样式 -->
+    <ul style="list-style: disc;">   
+        <!-- li是列表的行-->
+       <li>list1</li>
+       <li>list2</li>
+       <li>list3</li>
+       <li>list4</li>
+    </ul>
+    
+
+    <!-- ol是有序列表 -->
+    <!-- type是前标类型  -->
+    <ol type="I" > 
+        <li>list1</li>
+        <li>list2</li>
+        <li>list3</li>
+        <li>list4</li>
+    </ol>
+  
+    
+    <!-- 导航的时候会用到列表 -->
+    <!-- ul>li*4{$} -->
+<ul>
+    <li>一级导航1</li>
+    <li>一级导航2
+        <!-- ul>li*2{$} -->
+        <ul>
+            <li>二级导航1</li>
+            <li>二级导航2</li>
+        </ul>
+    </li>
+    <li>一级导航3</li>
+    <li>一级导航4</li>
+</ul>
+
+
+    <!-- tables表格 -->
+    <table style="width: 600px;"> 
+        <!-- 表头 -->
+        <thead>
+            <!-- tr表行 -->
+            <tr>
+                 <!--th 表头单元格 - 包含表头信息 -->
+                <th>姓名</th>
+                <th>性别</th>
+                <th>邮箱</th>
+            </tr>
+        </thead>
+        
+        <!-- 表体 -->
+        <tbody>
+            <tr>
+                <!-- td 表数据 标准单元格 - 包含数据-->
+                <td>gabrina</td>
+                <td>female</td>
+                <td>123@qq.com</td>
+            </tr>
+            <tr>
+                <!-- td 表数据 标准单元格 - 包含数据-->
+                <td>gabrina</td>
+                <td>female</td>
+                <td>123@qq.com</td>
+            </tr>
+            <tr>
+                <!-- td 表数据 标准单元格 - 包含数据-->
+                <td>gabrina</td>
+                <td>female</td>
+                <td>123@qq.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
